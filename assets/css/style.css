@@ -1,0 +1,89 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+body{
+    margin: 0;
+}
+
+.grid-tienda{
+    display: grid;
+    grid-template-areas:
+    "navbar navbar"
+    "asidebar productos"
+    "pie pie";
+    grid-template-rows: 0.5fr 9fr 0.5fr;  
+    grid-template-columns: 1fr 90%; 
+    
+    
+}
+.navbar{
+    grid-area: navbar;
+    background-color: rgb(9, 9, 119);
+    color: white;      
+    text-align: center;      
+}
+.asidebar{
+    grid-area: asidebar;
+    background-color:rgb(204, 202, 202);
+    
+}
+.productos{
+    grid-area: productos;
+    background-color:rgb(204, 202, 202);
+   
+}
+.pie{
+    grid-area: pie;
+    background-color: rgb(9, 9, 119);
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;    
+}
+
+.categoria-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 30px;
+}
+.productos-flex{
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    justify-items: center;
+    padding: 20px 10px 10px 20px;
+    max-width: 100%;
+      
+}
+.productos-item{
+    display: flex;
+    flex-direction: column;    
+    background-color: white;
+    margin: 10px;
+    
+        
+}
+
+.productos-item img{
+    width: 250px;
+    height: 250px;
+}
+.productos-item p{
+    text-align: center; 
+  
+}
+
+.nombre-item{
+    font-size: 20px;
+    font-weight: bold;
+}
+.precio-item{
+    color: rgb(120, 21, 145);
+    font-style: italic;
+    font-weight: bold;
+}
+button{
+    background-color: rgb(92, 92, 134);
+    color: white;
+    font-weight: bold;
+}
